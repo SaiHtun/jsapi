@@ -1,0 +1,88 @@
+{
+  "name": "jsapi",
+  "version": "1.0.0",
+  "description": "A quick way to access the Javascript API with examples 🚀",
+  "author": "sai @SaiHtun",
+  "bin": {
+    "jsapi": "./bin/run"
+  },
+  "homepage": "https://github.com/SaiHtun",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "repository": "https://github.com/SaiHtun/jsapi",
+  "files": [
+    "/bin",
+    "/dist",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json"
+  ],
+  "dependencies": {
+    "@oclif/core": "^1",
+    "@oclif/plugin-help": "^5",
+    "@oclif/plugin-plugins": "^2.0.1",
+    "@types/axios": "^0.14.0",
+    "@types/cheerio": "^0.22.31",
+    "axios": "^0.26.0",
+    "chalk": "^4.1.2",
+    "cheerio": "^1.0.0-rc.10",
+    "enquirer": "^2.3.6"
+  },
+  "devDependencies": {
+    "@oclif/test": "^2",
+    "@types/chai": "^4",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.9.4",
+    "chai": "^4",
+    "eslint": "^7.32.0",
+    "eslint-config-oclif": "^4",
+    "eslint-config-oclif-typescript": "^1.0.2",
+    "globby": "^11",
+    "mocha": "^9",
+    "oclif": "^2",
+    "shx": "^0.3.3",
+    "ts-node": "^10.2.1",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.3"
+  },
+  "oclif": {
+    "bin": "jsapi",
+    "dirname": "jsapi",
+    "commands": "./dist/commands",
+    "hooks": {
+      "prerun": "./dist/lib/hooks/prerun"
+    },
+    "plugins": [
+      "@oclif/plugin-help",
+      "@oclif/plugin-plugins"
+    ],
+    "topicSeparator": " ",
+    "topics": {
+      "search": {
+        "description": "A quick way to access the Javascript API with examples 🚀"
+      }
+    }
+  },
+  "scripts": {
+    "watch": "tsc -w",
+    "build": "shx rm -rf dist && tsc -b",
+    "lint": "eslint . --ext .ts --config .eslintrc",
+    "postpack": "shx rm -f oclif.manifest.json",
+    "prepack": "yarn build && oclif manifest && oclif readme",
+    "test": "mocha --forbid-only \"test/**/*.test.ts\"",
+    "version": "oclif readme && git add README.md"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "bugs": "https://github.com/https://github.com/SaiHtun/jsrepo/https://github.com/SaiHtun/jsrepo/issues",
+  "keywords": [
+    "oclif",
+    "javascript",
+    "api",
+    "exaples",
+    "jsapi",
+    "typescript",
+    "prototypes"
+  ],
+  "types": "dist/index.d.ts"
+}
