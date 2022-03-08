@@ -1,6 +1,6 @@
 {
-  "name": "jsapi",
-  "version": "1.0.0",
+  "name": "@saihtun/jsapi",
+  "version": "1.0.4",
   "description": "A quick way to access the Javascript API with examples 🚀",
   "author": "sai @SaiHtun",
   "bin": {
@@ -74,14 +74,16 @@
   "engines": {
     "node": ">=12.0.0"
   },
-  "bugs": "https://github.com/https://github.com/SaiHtun/jsrepo/https://github.com/SaiHtun/jsrepo/issues",
+  "bugs": "https://github.com/SaiHtun/jsapi/issues",
   "keywords": [
     "oclif",
-    "javascript",
-    "api",
-    "exaples",
-    "jsapi",
+    "node.js",
     "typescript",
+    "cheerio",
+    "chalk",
+    "api",
+    "examples",
+    "jsapi",
     "prototypes"
   ],
   "types": "dist/index.d.ts"

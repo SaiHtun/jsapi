@@ -1,32 +1,28 @@
 jsapi (Node.js Cli)
 =================
 
-# A fastest way to learn the Javascript API with examples. 🚀
-
-
+# A fastest way to learn the Javascript API with examples.
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/oclif-hello-world.svg)](https://npmjs.org/package/jsapi)
-[![Downloads/week](https://img.shields.io/npm/dw/oclif-hello-world.svg)](https://npmjs.org/package/oclif-hello-world)
-[![License](https://img.shields.io/npm/l/oclif-hello-world.svg)](https://github.com/oclif/hello-world/blob/main/package.json)
 
 <!-- toc -->
+* [A fastest way to learn the Javascript API with examples.](#a-fastest-way-to-learn-the-javascript-api-with-examples)
 * [Usage](#usage)
 * [Commands](#commands)
 <!-- tocstop -->
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g jsapi
-$ jsapi search [flags]
+$ npm install -g @saihtun/jsapi
+$ jsapi COMMAND
+running command...
 $ jsapi (--version)
-jsapi/0.0.0 darwin-x64 node-v14.16.1
+@saihtun/jsapi/1.0.3 darwin-x64 node-v14.16.1
 $ jsapi --help [COMMAND]
 USAGE
-  $ jsapi COMMAND <flag>=value
+  $ jsapi COMMAND
 EXAMPLES
-  $ jsapi search -t array -n filter
-  $ jsapi search <prompting interactive shell>
+  $ jsapi search -t <JS object type> -n <JS prototype method name>
 ...
 ```
 <!-- usagestop -->
@@ -35,47 +31,49 @@ EXAMPLES
 
 # Commands
 <!-- commands -->
-- [jsapi (Node.js Cli)](#jsapi-nodejs-cli)
-- [A fastest way to learn the Javascript API with examples. 🚀](#a-fastest-way-to-learn-the-javascript-api-with-examples-)
-- [Usage](#usage)
-- [Commands](#commands)
-  - [`jsapi search`](#jsapi-search)
-  - [`jsapi help [COMMAND]`](#jsapi-help-command)
-  - [`jsapi plugins`](#jsapi-plugins)
-  - [`jsapi plugins:inspect PLUGIN...`](#jsapi-pluginsinspect-plugin)
-  - [`jsapi plugins:install PLUGIN...`](#jsapi-pluginsinstall-plugin)
-  - [`jsapi plugins:link PLUGIN`](#jsapi-pluginslink-plugin)
-  - [`jsapi plugins:uninstall PLUGIN...`](#jsapi-pluginsuninstall-plugin)
-  - [`jsapi plugins update`](#jsapi-plugins-update)
+* [`jsapi <command> [flags]`](#jsapi-command-flags)
+* [`jsapi help [COMMAND]`](#jsapi-help-command)
+* [`jsapi plugins`](#jsapi-plugins)
+* [`jsapi plugins:inspect PLUGIN...`](#jsapi-pluginsinspect-plugin)
+* [`jsapi plugins:install PLUGIN...`](#jsapi-pluginsinstall-plugin)
+* [`jsapi plugins:link PLUGIN`](#jsapi-pluginslink-plugin)
+* [`jsapi plugins:uninstall PLUGIN...`](#jsapi-pluginsuninstall-plugin)
+* [`jsapi plugins update`](#jsapi-plugins-update)
 
-## `jsapi search`
+## `jsapi <command> [flags]`
 
-search Javascript API with examples.
+search JavaScript prototype methods quickly 🚀
+
 ```
 USAGE
-  $ jsapi search -t <value> -n <value>
+  $ jsapi <command> [flags]
+  $ jsapi <command> --help
+  $ jsapi <command> --version
 
 FLAGS
-  -t, --type=<value> Specify JS object type
-  -n, --name=<value> Specify JS prototype method name
+  -t, --type=<value>  Specify Javascript object type
+  -n, --name=<value>  Specify Javascript method name
 
 DESCRIPTION
   search JavaScript prototype methods quickly 🚀
 
 EXAMPLES
   $ jsapi search -t array -n filter
+
+  $ jsapi search -t string -n split
+
+  $ jsapi search ⤵  Prompting interactive shell
 ```
 
-_See code: [dist/commands/search/index.ts](https://github.com/SaiHtun/jsapi)_
-
-
-## `jsapi help [COMMAND]`
+_See code: [dist/commands/search/index.ts](https://github.com/SaiHtun/jsapi/blob/main/src/commands/search/index.ts)_
+## `jsapi search --help`
 
 Display help for jsapi.
 
 ```
 USAGE
-  $ jsapi help [COMMAND] [-n]
+  $ jsapi search help 
+  $ jsapi [COMMAND] [-n] --help
 
 ARGUMENTS
   COMMAND  Command to show help for.
@@ -234,6 +232,8 @@ FLAGS
 DESCRIPTION
   Update installed plugins.
 ```
+
+
 <!-- commandsstop -->
 
 
@@ -254,4 +254,3 @@ DESCRIPTION
 **Build with**:
 
 * node.js, typescript, oclif, cheerio, enquirer, chalk
-
