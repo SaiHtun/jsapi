@@ -22,7 +22,7 @@
     "@oclif/plugin-plugins": "^2.0.1",
     "@types/axios": "^0.14.0",
     "@types/cheerio": "^0.22.31",
-    "axios": "^0.26.0",
+    "axios": "^0.26.1",
     "chalk": "^4.1.2",
     "cheerio": "^1.0.0-rc.10",
     "enquirer": "^2.3.6"
