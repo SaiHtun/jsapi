@@ -1,12 +1,12 @@
 jsapi (Node.js Cli)
 =================
 
-# A fastest way to learn the Javascript API with examples.
+# The fastest way to learn the Javascript API with examples.
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 
 <!-- toc -->
-* [A fastest way to learn the Javascript API with examples.](#a-fastest-way-to-learn-the-javascript-api-with-examples)
+* [The fastest way to learn the Javascript API with examples.](#The-fastest-way-to-learn-the-javascript-api-with-examples)
 * [Usage](#usage)
 * [Commands](#commands)
 <!-- tocstop -->
