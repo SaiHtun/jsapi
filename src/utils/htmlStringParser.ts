@@ -40,7 +40,10 @@ export default class HtmlStringParser {
 
     $(examples)
       .find("span")
-      .each((i, span) => {
+      .each((_, span) => {
+        if ($(span).hasClass("language-name")) {
+          $(span).remove();
+        }
         if ($(span).hasClass("keyword")) {
           $(span).replaceWith(
             "<span>" + yellowItalic($(span).text()) + "</span>"
@@ -58,7 +61,7 @@ export default class HtmlStringParser {
 
     $(examples)
       .find("p")
-      .each((i, p) => {
+      .each((_, p) => {
         $(p).replaceWith("<p>" + mint($(p).text()) + "</p>" + "\n\n");
       });
 
