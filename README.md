@@ -1,19 +1,26 @@
 jsapi (Node.js Cli)
 =================
 
-# The fastest way to learn the Javascript API with examples.
+# The fastest way to learn the Javascript APIs with examples.
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 
 <!-- toc -->
-* [The fastest way to learn the Javascript API with examples.](#the-fastest-way-to-learn-the-javascript-api-with-examples)
+* [The fastest way to learn the Javascript APIs with examples.](#the-fastest-way-to-learn-the-javascript-api-with-examples)
 * [Usage](#usage)
 * [Commands](#commands)
 <!-- tocstop -->
+
+# Installation
+```sh-session
+$ npm install -g @saihtun/jsapi
+```
+
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g @saihtun/jsapi
+$ jsapi search
+interactive shell prompt with autocomplete features.
 $ jsapi COMMAND
 running command...
 $ jsapi (--version)
@@ -29,17 +36,22 @@ USAGE
 
 # Commands
 <!-- commands -->
-* [`jsapi help [COMMANDS]`](#jsapi-help-commands)
-* [`jsapi plugins`](#jsapi-plugins)
-* [`jsapi plugins:install PLUGIN...`](#jsapi-pluginsinstall-plugin)
-* [`jsapi plugins:inspect PLUGIN...`](#jsapi-pluginsinspect-plugin)
-* [`jsapi plugins:install PLUGIN...`](#jsapi-pluginsinstall-plugin-1)
-* [`jsapi plugins:link PLUGIN`](#jsapi-pluginslink-plugin)
-* [`jsapi plugins:uninstall PLUGIN...`](#jsapi-pluginsuninstall-plugin)
-* [`jsapi plugins:uninstall PLUGIN...`](#jsapi-pluginsuninstall-plugin-1)
-* [`jsapi plugins:uninstall PLUGIN...`](#jsapi-pluginsuninstall-plugin-2)
-* [`jsapi plugins update`](#jsapi-plugins-update)
-* [`jsapi <command> [flags]`](#jsapi-command-flags)
+- [jsapi (Node.js Cli)](#jsapi-nodejs-cli)
+- [The fastest way to learn the Javascript APIs with examples.](#the-fastest-way-to-learn-the-javascript-apis-with-examples)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Commands](#commands)
+  - [`jsapi help [COMMANDS]`](#jsapi-help-commands)
+  - [`jsapi plugins`](#jsapi-plugins)
+  - [`jsapi plugins:install PLUGIN...`](#jsapi-pluginsinstall-plugin)
+  - [`jsapi plugins:inspect PLUGIN...`](#jsapi-pluginsinspect-plugin)
+  - [`jsapi plugins:install PLUGIN...`](#jsapi-pluginsinstall-plugin-1)
+  - [`jsapi plugins:link PLUGIN`](#jsapi-pluginslink-plugin)
+  - [`jsapi plugins:uninstall PLUGIN...`](#jsapi-pluginsuninstall-plugin)
+  - [`jsapi plugins:uninstall PLUGIN...`](#jsapi-pluginsuninstall-plugin-1)
+  - [`jsapi plugins:uninstall PLUGIN...`](#jsapi-pluginsuninstall-plugin-2)
+  - [`jsapi plugins update`](#jsapi-plugins-update)
+  - [`jsapi <command> [flags]`](#jsapi-command-flags)
 
 ## `jsapi help [COMMANDS]`
 
@@ -112,7 +124,7 @@ ALIASES
   $ jsapi plugins add
 
 EXAMPLES
-  $ jsapi plugins:install myplugin 
+  $ jsapi plugins:install myplugin
 
   $ jsapi plugins:install https://github.com/someuser/someplugin
 
@@ -177,7 +189,7 @@ ALIASES
   $ jsapi plugins add
 
 EXAMPLES
-  $ jsapi plugins:install myplugin 
+  $ jsapi plugins:install myplugin
 
   $ jsapi plugins:install https://github.com/someuser/someplugin
 
