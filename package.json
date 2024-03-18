@@ -1,6 +1,6 @@
 {
   "name": "@saihtun/jsapi",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "preferGlobal": true,
   "description": "A quick way to access the Javascript API with examples 🚀",
   "author": "sai @SaiHtun",
