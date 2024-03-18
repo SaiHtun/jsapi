@@ -17,7 +17,7 @@ $ npm install -g @saihtun/jsapi
 $ jsapi COMMAND
 running command...
 $ jsapi (--version)
-@saihtun/jsapi/1.0.5 darwin-arm64 node-v21.6.2
+@saihtun/jsapi/1.0.6 darwin-arm64 node-v21.6.2
 $ jsapi --help [COMMAND]
 USAGE
   $ jsapi COMMAND
@@ -329,7 +329,7 @@ EXAMPLES
   $ jsapi search ⤵  Prompting interactive shell
 ```
 
-_See code: [src/commands/search/index.ts](https://github.com/SaiHtun/jsapi/blob/v1.0.5/src/commands/search/index.ts)_
+_See code: [src/commands/search/index.ts](https://github.com/SaiHtun/jsapi/blob/v1.0.6/src/commands/search/index.ts)_
 <!-- commandsstop -->
 
 
